@@ -55,9 +55,28 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics generated file
+crashlytics-build.properties
+
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# But not these files and folders
+!.gitignore          # .gitignore 파일은 제외
+!/Build/             # Build 폴더는 제외
+!/Template/          # Template 폴더는 제외
+!/index.html         # index.html 파일은 제외
+
+# 만약 하위 폴더와 파일도 추적하고 싶다면 아래와 같이 설정할 수 있습니다.
+!/Build/**           # Build 폴더 내 모든 파일 및 하위 폴더
+!/Template/**        # Template 폴더 내 모든 파일 및 하위 폴더
